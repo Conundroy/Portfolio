@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, minimum-scale=1.0">
+	<title>Bui Minh Hoang</title>
+	
+	<!-- 
+	Battle plan
+	1. make a row of all images/works, then make 2 clones of it, then the 3 rows are added to a parent with overflow scroll
+	2. set perspective to parent box, make it so that it looks like 3 parallel strips with parallel images: middle on top, the rest is on same plane and below the middle part
+	3. using clip-path property, clip parts of every row from 1st image down, giving illusion of a strip of 3 different images
+	4. ???
+	5. HD... DI
+	-->
+	<style>
+		body, html
+		{
+			overflow-x: hidden;
+			overflow-y: hidden;
+			margin: 0;
+		}
+
+		@font-face
+		{
+			font-family: 'Bahnschrift' format("truetypeface");
+			src: url(font/bahnschrift.tff);
+		}
+		@font-face
+		{
+			font-family: 'Futura PT' format("opentypeface");
+			src: url(font/FuturaPTMedium.otf);
+		}
+		.grid
+		{	
+			position: absolute;
+/*			margin-top: -3.6vw;
+			margin-left: -0.7vw;*/
+			height: 1080px;
+			width: 1920px;
+			z-index: -10;
+		}
+
+		@media screen and (orientation: portrait)
+		{	
+			body
+			{
+			overflow-x: hidden;
+			overflow-y: hidden;
+			margin: 0;
+			}
+			.content
+			{
+			display: absolute;
+			font-size: 5.5vh !important;
+			margin-top: 7vh !important;
+			margin-left: -20vh !important;
+			width: 100vh !important;
+			height: 100vh !important;
+			}
+			.menu
+			{
+			overflow-x: auto;
+			overflow-y: hidden;
+			height: 10vh !important;
+			width: 35vh !important;
+			margin-top: 1vh !important;
+			margin-left: 5vh !important;
+			scrollbar-width: none;
+			-ms-overflow-style: none;
+/*			margin-left: 13vh !important;
+			margin-top: -20vh !important;*/
+			}
+			.menu>a
+			{	
+				margin-right: 5vh !important;
+				font-size: 10vh !important;
+				width: 100% !important;
+			}
+			img
+			{
+			width: 50vh !important;
+			height: 25vh !important;
+			/*margin-left: -20vh !important;*/
+			}
+			.role
+			{
+				color: grey;
+				font-size: 5vh !important;
+				/*margin-left: 1vh !important;*/
+			}
+			.desc
+			{
+				margin-top: -20vh !important;
+				margin-left: 15vh !important;
+				height: 50vh !important;
+			}
+
+		}
+		.pseudoscreen
+		{
+			display: flex;
+			justify-content: center;
+			min-height: 100vh;
+		}
+
+		.menu
+		{
+			display: flex;
+			position: absolute;
+			z-index: 100;
+			height: 6.2vw;
+			width: 50vw;
+			margin-top: 6.2vw;
+			margin-left: -30vw;
+			transform: /*perspective(300px)*/rotateX(25deg) rotateZ(19.8deg) rotateY(-10deg);
+		}
+
+		.menu>a
+		{
+			font-family: 'Futura PT', sans-serif;
+			font-weight: bold;
+			font-size: 5vw;
+			width: 100%;
+			text-decoration: none;
+		}
+		a {color:black; transition: .2s;}
+/*		a:visited {text-decoration: none; color:red;}*/
+		a:active {color:ghostwhite;}
+		a:hover {color:red;}
+
+		.content
+		{	
+			display: flex;
+			flex-wrap: wrap;
+			font-size: 2.5vw;
+			margin-top: 17.65vw;
+			width: 75vw;
+			height: 25vw;
+			justify-content: center;
+ 			align-items: flex-start;
+			font-family: 'Bahnschrift', sans-serif;
+  			overflow-x: scroll;
+  			overflow-y: hidden;
+  			scrollbar-width: none;
+			-ms-overflow-style: none;
+			object-fit: contain;
+			transform: /*perspective(300px)*/ rotateX(25deg) rotateZ(19.8deg) rotateY(-10deg);
+		}
+		.content::-webkit-scrollbar 
+		{
+ 			display: none;
+		}
+
+		img
+		{
+			width: 50vw;
+			height: 25vw;
+			object-fit: contain;
+			background-color: whitesmoke;
+		}
+
+		.role
+		{
+			color: grey;
+			font-size: 2vw;
+			margin-left: 1vw;
+		}
+		.desc
+		{
+			padding-left: 2.5vw
+		}
+
+	</style>
+
+	
+</head>
+<body>
+<!-- 	<div class="grid">
+		<img src="GRID.jpg">
+	</div> -->
+<div class="pseudoscreen">
+	<div class="menu">
+		<a href="about.html">About</a>
+		<a href="index.html" style="padding-left: 2.5vw">Work</a>
+		<a href="contact.html" style="padding-left: 2.5vw">Contact</a>
+	</div>
+	<div class="content">
+		<div>
+			<img src="item1view.png">
+		</div>
+		<div class="desc">
+			<a href="https://thisnameistakenist.wixsite.com/website" target="_blank">Wix Website</a> <br>
+			<div class="role">Owner<br>Designer<br>Programmer</div>
+		</div>
+	</div>
+</div>
+<!-- <svg width="0" height="0" >
+  <defs>
+    <clipPath id="clip">   	
+      	<rect x="0vw" y="0vw" width="25vw" height="20vw"/>
+      	<rect x="0vw" y="20vw" width="25vw" height="20vw"/>
+      	<rect x="2.5vw" y="41vw" width="25vw" height="20vw"/>
+      	<rect x="30vw" y="5vw" width="28vw" height="60vw"/>
+      	<rect x="0" y="9.5" width="25vw" height="455"/>
+    </clipPath>
+  </defs>
+</svg> -->
+
+
+
+
+</body>
+</html>

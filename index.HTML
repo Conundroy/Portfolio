@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Bui Minh Hoang</title>
+	
+	<!-- 
+	Battle plan
+	1. make a row of all images/works, then make 2 clones of it, then the 3 rows are added to a parent with overflow scroll
+	2. set perspective to parent box, make it so that it looks like 3 parallel strips with parallel images: middle on top, the rest is on same plane and below the middle part
+	3. using clip-path property, clip parts of every row from 1st image down, giving illusion of a strip of 3 different images
+	4. ???
+	5. HD... DI
+	-->
+	<style>
+		body
+		{
+			overflow: hidden;
+			margin: 0;
+		}
+
+		@font-face
+		{
+			font-family: 'Bahnschrift' format("truetypeface");
+			src: url(font/bahnschrift.tff);
+		}
+
+		@font-face
+		{
+			font-family: 'Futura PT' format("opentypeface");
+			src: url(font/FuturaPTMedium.otf);
+		}
+
+		.grid
+		{	
+			position: absolute;
+/*			margin-top: -3.6vw;
+			margin-left: -0.7vw;*/
+			height: 1080px;
+			width: 1920px;
+			z-index: -10;
+		}
+
+		@media screen and (orientation: portrait)
+		{	
+			body
+			{
+				overflow-x: hidden;
+				overflow-y: hidden;
+				margin: 0;
+			}
+			.content
+			{
+				display: absolute;
+				margin-top: 10vh !important;
+				margin-left: 25vh !important;
+				height: 100vh !important;
+				width: 50vh !important
+			}
+			.vert
+			{
+				margin-left: -25vh !important;
+			}
+			.vert1
+			{
+				margin-top: -16vh !important;
+				margin-left: 12vh !important;
+			}
+			.topbox
+			{	
+				width: 72.7vh !important;
+				height: 70vh !important;
+				margin-bottom: 1vh !important;
+			}
+			.midbox
+			{	
+				width: 72.7vh !important;
+				height: 75vh !important;
+			}
+			.botbox
+			{	
+				margin-top: 1vh !important;
+				margin-left: 0.5vh !important;
+				width: 72.7vh !important;
+				height: 65vh !important;
+			}
+			.midframe
+			{
+				margin-top: -34vh !important;
+				height: 75vh !important;
+			}
+			.botframe
+			{
+				margin-top: -70vh !important;
+				height: 75vh !important;
+			}
+			.img
+			{
+				width: 72.7vh !important;
+			}
+			.menu
+			{
+				overflow-x: auto;
+				overflow-y: hidden;
+				height: 10vh !important;
+				width: 35vh !important;
+				margin-top: 1vh !important;
+				margin-left: 5vh !important;
+			}
+			.menu>a
+			{	
+				margin-right: 5vh !important;
+				font-size: 10vh !important;
+				width: 100% !important;
+			}
+		}
+
+		.pseudoscreen
+		{
+			display: flex;
+			justify-content: center;
+			min-height: 100vh;
+		}
+
+		.menu
+		{
+			display: flex;
+			position: absolute;
+			z-index: 100;
+			align-content: space-between;
+			height: 6.2vw;
+			width: 50vw;
+			margin-top: 6.2vw;
+			margin-left: -30vw;
+			transform: /*perspective(300px)*/rotateX(25deg) rotateZ(19.8deg) rotateY(-10deg);
+		}
+
+		.menu>a
+		{
+			font-family: 'Futura PT', sans-serif;
+			font-weight: bold;
+			font-size: 5vw;
+			width: 100%;
+			text-decoration: none;
+		}
+		a {color:black; transition: .2s;}
+		a:active {color:lightgrey;}
+		a:hover {color:red;}
+
+		.horz
+		{
+			display: flex;
+			flex-direction: column;
+			align-content: space-around;
+		}
+		.vert
+		{
+			display: flex;
+		}
+		.vert1
+		{
+			display: flex;
+		}
+		.content
+		{	
+			display: flex;
+			flex-direction: column;
+  			overflow: hidden;
+			height: 70vw;
+			margin-top: -11.4vw;
+			transform: /*perspective(500px)*/ rotateX(25deg) rotateZ(19.8deg) rotateY(-10deg);
+		}
+
+		.img
+		{	
+			width: 72.7vw;
+		}
+
+		.topbox 
+		{	
+			width: 72.7vw;
+			height: 70vw;
+			margin-left: 1vw;
+			margin-bottom: 6.2vw;
+			overflow-y: auto;
+			overflow-x: hidden;
+			scrollbar-width: none;
+			-ms-overflow-style: none;
+		}
+		.topbox::-webkit-scrollbar 
+		{
+ 			display: none;
+		}
+
+		.midbox
+		{	
+			width: 72.7vw;
+			height: 75vw;
+			overflow-y: scroll;
+			overflow-x: hidden;
+			scrollbar-width: none;
+			-ms-overflow-style: none;
+		}
+		.midbox::-webkit-scrollbar 
+		{
+ 			display: none;
+		}
+
+		.midframe
+		{
+			margin-top: -16vw;
+			height: 75vw;
+		}
+
+		.botbox
+		{	
+			margin-top: 1vw;
+			margin-left: 0.5vw;
+			width: 72.7vw;
+			height: 65vw;
+			overflow-y: auto;
+			overflow-x: hidden;
+			scrollbar-width: none;
+			-ms-overflow-style: none;
+		}
+
+		.botbox::-webkit-scrollbar 
+		{
+ 			display: none;
+		}
+
+		.botframe
+		{
+			margin-top: -37vw;
+			height: 75vw;
+		}
+
+
+	</style>
+
+	
+</head>
+<body>
+<!-- 	<div class="grid">
+		<img src="GRID.jpg">
+	</div> -->
+<div class="pseudoscreen">
+	<div class="menu">
+		<a href="about.html">About</a>
+		<a href="index.html" style="padding-left: 2.5vw">Work</a>
+		<a href="contact.html" style="padding-left: 2.5vw">Contact</a>
+	</div>
+	<div class="horz">
+		<div class="vert">
+
+				<div class="content">
+				  	<div class="topbox">
+					  	<a href="item1.html"><img class="img" src="item1.png"></a>
+					  	<a href="item2.html"><img class="img" src="item2.png"></a>
+					  	<a href="item3.html"><img class="img" src="item3.png"></a>
+					  	<a href="item4.html"><img class="img" src="item4.jpg"></a>
+					  	<a href="item5.html"><img class="img" src="item5.jpg"></a>
+					  	<a href="item6.html"><img class="img" src="item6.png"></a>
+				  	</div>
+				  	
+					<div class="midbox">
+						<div class="midframe">
+							<a href="item1.html"><img class="img" src="item1.png"></a>
+						  	<a href="item2.html"><img class="img" src="item2.png"></a>
+						  	<a href="item3.html"><img class="img" src="item3.png"></a>
+						  	<a href="item4.html"><img class="img" src="item4.jpg"></a>
+						  	<a href="item5.html"><img class="img" src="item5.jpg"></a>
+						  	<a href="item6.html"><img class="img" src="item6.png"></a>
+					  	</div>
+					</div>
+					<div class="botbox">
+						<div class="botframe">
+							<a href="item1.html"><img class="img" src="item1.png"></a>
+						  	<a href="item2.html"><img class="img" src="item2.png"></a>
+						  	<a href="item3.html"><img class="img" src="item3.png"></a>
+						  	<a href="item4.html"><img class="img" src="item4.jpg"></a>
+						  	<a href="item5.html"><img class="img" src="item5.jpg"></a>
+						  	<a href="item6.html"><img class="img" src="item6.png"></a>
+					  	</div>
+					</div>
+				</div>
+
+				
+		</div>
+
+	</div>
+</div>
+<!-- <svg width="0" height="0" >
+  <defs>
+    <clipPath id="clip">   	
+      	<rect x="0vw" y="0vw" width="25vw" height="20vw"/>
+      	<rect x="0vw" y="20vw" width="25vw" height="20vw"/>
+      	<rect x="2.5vw" y="41vw" width="25vw" height="20vw"/>
+      	<rect x="30vw" y="5vw" width="28vw" height="60vw"/>
+      	<rect x="0" y="9.5" width="25vw" height="455"/>
+    </clipPath>
+  </defs>
+</svg> -->
+
+
+
+
+</body>
+</html>
