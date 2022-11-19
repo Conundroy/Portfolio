@@ -5,20 +5,47 @@
   /* Check Signika font on Google font */
 }
 
-#bg
+nav
+{
+	justify-content: space-evenly;
+	text-align: center;
+	transform-style: preserve-3d;
+	/*border: 1px solid #4CAF50;*/
+}
+
+body
+{
+	overflow-x: hidden;
+	transition: background-color 0.5s ease;
+	background-color: none;
+	overflow-x: hidden;
+}
+
+.overlay
 {
 	position: absolute;
 	background-color: brown;
-	top: 0;
-	left: 0;
-	width: 100vw;
-	height: 100vh;
+	top: 0px;
+  	right: 0px;
+  	bottom: 0px;
+  	left: 0px;
 	opacity: 0;
-  transition: opacity 0.5s ease;
-	z-index: -2;
+  	transition: opacity 0.5s ease;
+	z-index: -1;
 }
 
-#overlay
+/* .overlay
+{
+	position: absolute;
+	background-color: brown;
+  	width: 100%;
+	height: 100%;
+  	transition: opacity 0.5s ease;
+	opacity: 0;
+	z-index: -1;
+} */
+
+#banner
 {
 	position: absolute;
 	background-color: brown;
@@ -37,16 +64,6 @@
 	/*border: 1px solid #4CAF50;*/
 }
 
-#icon
-{
-	z-index: 1;
-}
-
-body
-{
-	overflow: hidden;
-}
-
 a
 {
 	color:black; 
@@ -57,18 +74,10 @@ a
 
 a:active {color:lightgrey;}
 a:hover {color:whitesmoke;} 
-nav:hover ~ #bg
+nav:hover ~ .overlay
 {
 	opacity: 1;
 	/*z-index: -1;*/
-}
-
-nav
-{
-	justify-content: space-evenly;
-	text-align: center;
-	transform-style: preserve-3d;
-	/*border: 1px solid #4CAF50;*/
 }
 
 @media screen and (orientation: portrait)
