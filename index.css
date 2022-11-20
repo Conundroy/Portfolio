@@ -10,15 +10,43 @@ nav
 	justify-content: space-evenly;
 	text-align: center;
 	transform-style: preserve-3d;
-	/*border: 1px solid #4CAF50;*/
+	width: 100%;
+	/* border: 1px solid #4CAF50; */
 }
 
 body
 {
 	overflow-x: hidden;
-	transition: background-color 0.5s ease;
-	background-color: none;
-	overflow-x: hidden;
+}
+
+p
+{
+	position: absolute; 
+	bottom: 0;
+	font-family: bahnschrift;
+	color: whitesmoke;
+	z-index: -1;
+	/* border: 1px solid #4CAF50; */
+}
+
+.header
+{
+	position: fixed; 
+	top: 0; 
+	right: 0; 
+	width: 100%;
+	/* border: 1px solid #4CAF50; */
+}
+
+.content
+{
+	display: grid; 
+	position: absolute; 
+	top: 0; 
+	left: 0; 
+	width: 100vw; 
+	height: 100vh; 
+	z-index: -3;
 }
 
 .overlay
@@ -27,23 +55,36 @@ body
 	background-color: brown;
 	top: 0px;
   	right: 0px;
-  	bottom: 0px;
-  	left: 0px;
-	opacity: 0;
+  	width: 100%;
+	height: 100vh;
+	opacity: 0.0;
+	pointer-events: none;
   	transition: opacity 0.5s ease;
 	z-index: -1;
 }
 
-/* .overlay
+.veil
 {
-	position: absolute;
-	background-color: brown;
+	position: fixed;
+	background-color: black;
+	top: 0px;
+  	right: 0px;
   	width: 100%;
-	height: 100%;
+	height: 100vh;
+	opacity: .7;
+	pointer-events: none;
   	transition: opacity 0.5s ease;
-	opacity: 0;
-	z-index: -1;
-} */
+	z-index: -2;
+}
+
+.thumbnail
+{
+	position: sticky; 
+	top: 30%;
+	left: 15%;
+	/* top: 50%;
+	left: 50%; */
+}
 
 #banner
 {
@@ -57,7 +98,7 @@ body
 	z-index: -1;
 }
 
-#header
+#logo
 {
 	display: flex;
 	justify-content: flex-end;
@@ -79,6 +120,10 @@ nav:hover ~ .overlay
 	opacity: 1;
 	/*z-index: -1;*/
 }
+p:hover ~ .veil
+{
+	opacity: .9;
+}
 
 @media screen and (orientation: portrait)
 {
@@ -94,6 +139,18 @@ nav:hover ~ .overlay
 	{
 		margin: 2.5vh;
 		width: 10%;
+	}
+
+	.thumbnail
+	{ 
+		width: 70vh;
+		/* height: 50vh; */
+	}
+
+	p
+	{
+		font-size: 5vh;
+		margin: 5vh;
 	}
 }
 
@@ -111,5 +168,17 @@ nav:hover ~ .overlay
 	{
 		margin: 2.5vw;
 		width: 5%;
+	}
+
+	.thumbnail
+	{ 
+		width: 70vw; 
+		/* height: 40vw; */
+	}
+
+	p
+	{
+		font-size: 5vw;
+		margin: 5vw;
 	}
 }
