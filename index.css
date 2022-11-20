@@ -19,7 +19,7 @@ body
 	overflow-x: clip;
 }
 
-p
+.project
 {
 	position: absolute; 
 	bottom: 0;
@@ -121,7 +121,7 @@ nav:hover ~ .overlay
 	opacity: 1;
 	/*z-index: -1;*/
 }
-p:hover ~ .veil
+.project:hover ~ .veil
 {
 	opacity: .9;
 }
@@ -147,7 +147,7 @@ p:hover ~ .veil
 		top: 40%;
 	}
 
-	p
+	.project
 	{
 		font-size: 5vh;
 		margin: 5vh;
@@ -175,7 +175,7 @@ p:hover ~ .veil
 		top: 30%;
 	}
 
-	p
+	.project
 	{
 		font-size: 5vw;
 		margin: 5vw;
