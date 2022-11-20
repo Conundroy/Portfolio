@@ -79,10 +79,23 @@ body
 
 .thumbnail
 {
-	position: sticky; 
-	/* top: 30%; */
+	position: sticky;
+	top: 30%;
 	left: 15%;
 	width: 70%;
+	opacity: 0;
+	/* top: 50%;
+	left: 50%; */
+}
+
+.v_thumbnail
+{
+	position: sticky; 
+	top: 20%;
+	left: 15%;
+	width: 70%;
+	opacity: 0;
+	/* z-index: 1; */
 	/* top: 50%;
 	left: 50%; */
 }
@@ -142,16 +155,14 @@ nav:hover ~ .overlay
 		width: 10%;
 	}
 
-	.thumbnail
-	{
-		top: 40%;
-	}
-
 	.project
 	{
 		font-size: 5vh;
 		margin: 5vh;
 	}
+
+	.thumbnail {opacity: 0; position: absolute; z-index: -4;}
+	.v_thumbnail {opacity: 1;}
 }
 
 @media screen and (orientation: landscape)
@@ -170,14 +181,12 @@ nav:hover ~ .overlay
 		width: 5%;
 	}
 
-	.thumbnail
-	{
-		top: 30%;
-	}
-
 	.project
 	{
 		font-size: 5vw;
 		margin: 5vw;
 	}
+
+	.thumbnail {opacity: 1;}
+	.v_thumbnail {opacity: 0; position: absolute; z-index: -4;}
 }
