@@ -80,7 +80,7 @@ p
 .thumbnail
 {
 	position: sticky; 
-	top: 30%;
+	/* top: 30%; */
 	left: 15%;
 	width: 70%;
 	/* top: 50%;
@@ -142,6 +142,11 @@ p:hover ~ .veil
 		width: 10%;
 	}
 
+	.thumbnail
+	{
+		top: 40%;
+	}
+
 	p
 	{
 		font-size: 5vh;
@@ -163,6 +168,11 @@ p:hover ~ .veil
 	{
 		margin: 2.5vw;
 		width: 5%;
+	}
+
+	.thumbnail
+	{
+		top: 30%;
 	}
 
 	p
