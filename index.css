@@ -21,8 +21,17 @@ body
 
 .project
 {
-	position: absolute; 
-	bottom: 0;
+	display: flex;
+ 	/* justify-content: flex-end; */
+  	align-items: flex-end;
+	/* padding-top: 80vh;
+	padding-bottom: 80vh; */
+	/* position: relative;  */
+	/* left: 0;
+	bottom: 0; */
+	/* text-align: bottom; */
+	width: 50vw;
+	height: 200vh;
 	font-family: bahnschrift;
 	color: whitesmoke;
 	z-index: -1;
@@ -67,14 +76,21 @@ body
 {
 	position: fixed;
 	background-color: black;
-	top: 0px;
-  	right: 0px;
-  	width: 100%;
+  	width: 100vw;
 	height: 100vh;
 	opacity: .7;
-	pointer-events: none;
+	/* pointer-events: none; */
   	transition: opacity 0.5s ease;
 	z-index: -2;
+}
+
+.name
+{
+	display: grid; 
+	position: absolute; 
+	top: 0; 
+	left: 0;
+	z-index: -1;
 }
 
 .thumbnail
@@ -129,9 +145,9 @@ a
 
 a:active {color:lightgrey;}
 a:hover {color:whitesmoke;} 
-nav:hover ~ .overlay
+nav:hover > .veil
 {
-	opacity: 1;
+	opacity: 0;
 	/*z-index: -1;*/
 }
 .project:hover ~ .veil
@@ -158,7 +174,7 @@ nav:hover ~ .overlay
 	.project
 	{
 		font-size: 5vh;
-		margin: 5vh;
+		margin-left: 5vh;
 	}
 
 	.thumbnail {opacity: 0; position: absolute; z-index: -4;}
@@ -184,7 +200,7 @@ nav:hover ~ .overlay
 	.project
 	{
 		font-size: 5vw;
-		margin: 5vw;
+		margin-left: 5vw;
 	}
 
 	.thumbnail {opacity: 1;}
