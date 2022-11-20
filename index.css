@@ -82,6 +82,7 @@ p
 	position: sticky; 
 	top: 30%;
 	left: 15%;
+	width: 70%;
 	/* top: 50%;
 	left: 50%; */
 }
@@ -141,12 +142,6 @@ p:hover ~ .veil
 		width: 10%;
 	}
 
-	.thumbnail
-	{ 
-		width: 70vh;
-		/* height: 50vh; */
-	}
-
 	p
 	{
 		font-size: 5vh;
@@ -168,12 +163,6 @@ p:hover ~ .veil
 	{
 		margin: 2.5vw;
 		width: 5%;
-	}
-
-	.thumbnail
-	{ 
-		width: 70vw; 
-		/* height: 40vw; */
 	}
 
 	p
