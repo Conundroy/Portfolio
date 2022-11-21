@@ -40,7 +40,6 @@ body
 
 .desc
 {
-	width: 50vw;
 	font-family: bahnschrift;
 	color: whitesmoke;
 }
@@ -187,7 +186,8 @@ nav:hover ~ .overlay
 
 	.desc
 	{
-		font-size: 2vh;
+		width: 60vw;
+		font-size: 2.5vh;
 		margin-left: 2.5vh;
 	}
 
@@ -219,6 +219,7 @@ nav:hover ~ .overlay
 
 	.desc
 	{
+		width: 50vw;
 		font-size: 2vw;
 		margin-left: 2.5vw;
 	}
