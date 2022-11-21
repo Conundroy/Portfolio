@@ -5,6 +5,13 @@
   /* Check Signika font on Google font */
 }
 
+@font-face 
+{
+  font-family: futura;
+  src: url(font/FuturaPTMedium.otf);
+  /* Check Signika font on Google font */
+}
+
 nav
 {
 	justify-content: space-evenly;
@@ -130,6 +137,12 @@ body
 	 z-index: 1;
 }
 
+.conundroy
+{
+	font-family: futura;
+	color: whitesmoke;
+}
+
 #banner
 {
 	position: absolute;
@@ -205,6 +218,13 @@ nav:hover ~ .overlay
 	{
 		width: 15%; 
 	}
+
+	.conundroy
+	{
+		font-size: 15vh;
+		margin-top: 25vh;
+		transform: rotateX(45deg) rotateZ(15deg);
+	}
 }
 
 @media screen and (orientation: landscape)
@@ -242,5 +262,12 @@ nav:hover ~ .overlay
 	.hero
 	{
 		width: 9%;
+	}
+
+	.conundroy
+	{
+		font-size: 15vw;
+		margin-top: 25vw;
+		transform: rotateX(45deg) rotateZ(10deg);
 	}
 }
