@@ -38,6 +38,13 @@ body
 	/* border: 1px solid #4CAF50; */
 }
 
+.desc
+{
+	width: 50vw;
+	font-family: bahnschrift;
+	color: whitesmoke;
+}
+
 .header
 {
 	position: fixed; 
@@ -178,6 +185,12 @@ nav:hover ~ .overlay
 		margin-left: 5vh;
 	}
 
+	.desc
+	{
+		font-size: 2vh;
+		margin-left: 2.5vh;
+	}
+
 	.thumbnail {opacity: 0; position: absolute; z-index: -4;}
 	.v_thumbnail {opacity: 1;}
 }
@@ -202,6 +215,12 @@ nav:hover ~ .overlay
 	{
 		font-size: 5vw;
 		margin-left: 5vw;
+	}
+
+	.desc
+	{
+		font-size: 2vw;
+		margin-left: 2.5vw;
 	}
 
 	.thumbnail {opacity: 1;}
