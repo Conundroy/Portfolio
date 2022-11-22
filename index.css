@@ -222,7 +222,7 @@ nav:hover ~ .overlay
 	.conundroy
 	{
 		font-size: 10vh;
-		margin-top: 25vh;
+		margin-top: 22vh;
 		transform: rotateX(45deg) rotateZ(15deg);
 	}
 }
@@ -267,7 +267,7 @@ nav:hover ~ .overlay
 	.conundroy
 	{
 		font-size: 12.5vw;
-		margin-top: 25vw;
+		margin-top: 22vw;
 		transform: rotateX(45deg) rotateZ(10deg);
 	}
 }
