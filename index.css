@@ -75,7 +75,7 @@ body
 	width: 100%; 
 	/* height: 100vh;  */
 	z-index: -3;
-	overflow: clip;
+	overflow-x: clip;
 }
 
 .overlay
@@ -219,11 +219,21 @@ nav:hover ~ .overlay
 
 	.info
 	{
-		width: 70vw;
-		font-size: 3vh;
-		left: 2.5vh;
-		top: 15%;
-		line-height: 7vw;
+		width: 90vw;
+		height: 100vh;
+		font-size: 10vh;
+		margin: 5vh;
+		margin-top: 10vh;
+		line-height: 125%;
+	}
+
+	.shape
+	{
+		/* background-color: red; */
+		height: 20vh;
+		width: 100vh;
+		float: right;
+		shape-outside: polygon(0vh 5vh, 100vh 20vh, 100vh 0, 0 0);
 	}
 
 	.thumbnail {opacity: 0; position: absolute; z-index: -4;}
@@ -289,12 +299,22 @@ nav:hover ~ .overlay
 
 	.info
 	{
-		width: 70vw;
-		font-size: 2.5vw;
-		left: 2.5vw;
-		top: 23%;
+		width: 90vw;
+		font-size: 10vw;
+		margin: 5vw;
+		margin-top: 10vw;
+		/* top: 23%; */
 		/* bottom: 5%; */
-		line-height: 7vh;
+		line-height: 115%;
+	}
+
+	.shape
+	{
+		/* background-color: red; */
+		height: 20vw;
+		width: 100vw;
+		float: right;
+		shape-outside: polygon(0vw 2vw, 100vw 20vw, 100vw 0, 0 0);
 	}
 
 	.thumbnail {opacity: 1;}
