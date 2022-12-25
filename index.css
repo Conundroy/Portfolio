@@ -177,6 +177,26 @@ body
   	100% { background-position: 0% 100%; }
 }
 
+.navmobile
+{
+	display: flex; 
+	flex-direction: column; 
+	justify-content: space-between; 
+	height: 9vh; 
+	right: 1vw; 
+	position: absolute;
+}
+
+.navmobile a
+{
+	background-color: black; 
+	width: 1.5vh; 
+	height: 1.5vh; 
+	border-radius: 50% 50% 50% 50%;
+}
+
+.navmobile a:active {color:lightgrey;}
+
 #banner
 {
 	position: absolute;
@@ -286,6 +306,7 @@ nav:hover ~ .overlay
 		margin-right: 5vw;
 		width: 100vw;
 		height: 10vh;
+		scroll-behavior: smooth;
 		/* background-color: white; */
 		overflow-y: auto;
 		overflow-x: clip;
@@ -293,6 +314,11 @@ nav:hover ~ .overlay
 		text-align: right;
 	}
 
+	.navmobile
+	{
+		pointer-events: all;
+		visibility: visible;
+	}
 
 }
 
@@ -367,5 +393,11 @@ nav:hover ~ .overlay
 		text-align: center;
 		transform-style: preserve-3d;
 		width: 100%;
+	}
+
+	.navmobile
+	{
+		pointer-events: none;
+		visibility: hidden;
 	}
 }
