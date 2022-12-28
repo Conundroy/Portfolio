@@ -139,9 +139,9 @@ body
 
 .hero
 {
-	 height: 90%; 
-	 position: absolute; 
-	 z-index: 1;
+	height: 90%; 
+	position: absolute; 
+	z-index: 1;
 }
 
 .conundroy
@@ -235,10 +235,11 @@ nav:hover ~ .overlay
 		transform: rotateX(45deg) rotateZ(15deg);
 	}
 
-	img
+	.logo-frame
 	{
 		margin: 2.5vh;
 		width: 10%;
+		visibility: hidden;
 	}
 
 	.project
@@ -311,11 +312,16 @@ nav:hover ~ .overlay
 		height: 50vh;
 	}
 
-	/* #logo
+	.heromobile
 	{
-		pointer-events: none;
-		visibility: hidden;
-	} */
+		position: absolute;
+		display: inline-flex;
+		margin-bottom: 5vh;
+		margin-left: 82vw;
+		width: 10vw;
+		height: 10vw;
+		z-index: -1;
+	}
 
 	.dropdown
 	{
@@ -505,10 +511,11 @@ nav:hover ~ .overlay
 		transform: rotateX(45deg) rotateZ(10deg);
 	}
 
-	img
+	.logo-frame
 	{
 		margin: 2.5vw;
 		width: 5%;
+		visibility: visible;
 	}
 
 	.project
