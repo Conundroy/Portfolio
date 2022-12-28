@@ -191,9 +191,8 @@ body
 {
 	position: absolute;
 	background-color: brown;
-	left: -20vw;
-	width: 200%;
-	height: 600%;
+	left: -100%;
+	width: 300%;
 	transform-origin: bottom center;
 	transform: translate(0, -80%);
 	z-index: -1;
@@ -307,11 +306,16 @@ nav:hover ~ .overlay
 		visibility: hidden;
 	}
 
-	#logo
+	#banner
+	{
+		height: 50vh;
+	}
+
+	/* #logo
 	{
 		pointer-events: none;
 		visibility: hidden;
-	}
+	} */
 
 	.dropdown
 	{
@@ -335,7 +339,12 @@ nav:hover ~ .overlay
 		flex-direction: column;
 		justify-content: space-between;
 		cursor: pointer;
+	}
+
+	.icon-wrapper
+	{
 		transform: rotateX(45deg) rotateZ(15deg);
+		margin-left: 3vw;
 	}
 
 	.hamburger:before
@@ -396,20 +405,20 @@ nav:hover ~ .overlay
 		position: absolute;
 		display: flex;
 		flex-direction: column;
-		top: 10vh;
+		top: 0;
 		transform: translateX(-50%);
 		transform-origin: center;
-		transition: opacity 0.4s cubic-bezier(0.54, -0.10, 0.57, 0.57);
+		transition: opacity 0.5s ease;
 		background-color: brown;
 		width: 100vw;
-		height: 90vh;
+		height: 100vh;
 		left: 50%;
 		justify-content: space-evenly;
 		text-align: center;
-		font-size: 10vh;
+		font-size: 10vw;
 		opacity: 0;
 		pointer-events: none;
-		z-index: -1;
+		z-index: -2;
     
 	/*		div {
 		  padding: 10px 30px;
@@ -421,9 +430,10 @@ nav:hover ~ .overlay
 	.menu-button
 	{
 		position: absolute;
-		width: 20vw;
-		height: 20vw;
+		width: 15vw;
+		height: 15vw;
 		top: 5vh;
+		margin-left: 0vw;
 /*		left: -7vw;*/
 		z-index: 2;
 		opacity: 0;
@@ -437,6 +447,7 @@ nav:hover ~ .overlay
 		transform: translateX(-50%);
 		opacity: 1;
 		pointer-events: auto;
+		z-index: -1;
 	}  
   
 	.menu-button:checked ~ .icon-wrapper .hamburger-line.second
@@ -456,6 +467,30 @@ nav:hover ~ .overlay
   
 	.menu-button:checked ~ .icon-wrapper .hamburger:before {
 		transform: rotate(45deg);
+	}
+
+	.menu-button:checked ~ .icon-wrapper
+	{
+		transform: rotateX(0deg) rotateZ(0deg);
+		margin-left: 70vw;
+		animation: fadein 0.5s ease;
+	}
+
+	.menu-button:checked 
+	{
+		margin-left: 70vw;
+	}
+
+	@keyframes fadein
+	{
+		0% { opacity: 0; }
+		100% { opacity: 1; }
+	}
+
+	@keyframes fadeout
+	{
+		0% { opacity: 1; }
+		100% { opacity: 0; }
 	}
 
 }
@@ -537,5 +572,10 @@ nav:hover ~ .overlay
 	{
 		pointer-events: none;
 		visibility: hidden;
+	}
+
+	#banner
+	{
+		height: 50vw;
 	}
 }
