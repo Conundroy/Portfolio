@@ -316,10 +316,11 @@ nav:hover ~ .overlay
 	{
 		position: absolute;
 		display: inline-flex;
-		justify-content: flex-end;
-		width: 95vw;
-		top: 2vh;
-		z-index: -1;
+		justify-content: flex-start;
+		width: 90vw;
+		top: 4vh;
+		opacity: 0;
+		pointer-events: none;
 	}
 
 	.dropdown
@@ -471,6 +472,13 @@ nav:hover ~ .overlay
 	{
 		transform: rotateX(0deg) rotateZ(0deg);
 		margin-left: 70vw;
+		animation: fadein 0.5s ease;
+	}
+
+	.menu-button:checked ~ .heromobile
+	{
+		pointer-events: auto;
+		opacity: 1;
 		animation: fadein 0.5s ease;
 	}
 
