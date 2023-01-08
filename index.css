@@ -258,6 +258,11 @@ nav:active ~ .overlay
 	opacity: .9;
 }
 
+::-webkit-scrollbar
+{
+	opacity: 0;
+}
+
 ::-webkit-scrollbar-track
 {
 	opacity: 0;
@@ -265,7 +270,6 @@ nav:active ~ .overlay
 
 ::-webkit-scrollbar-thumb
 {
-	opacity: 1;
 	color: whitesmoke;
 	border-radius: 10px;
 }
