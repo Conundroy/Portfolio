@@ -84,6 +84,8 @@ body
 	pointer-events: none;
 	z-index: -1;
 	animation: fadeout 1s ease;
+	-webkit-animation: fadeout 1s ease;
+    -moz-animation: fadeout 1s ease;
 }
 
 .veil
@@ -240,11 +242,18 @@ a:hover {color:whitesmoke;}
 nav:active ~ .overlay
 {
 	animation: fadein 0.5s ease;
+	-webkit-animation: fadein 0.5s ease;
+    -moz-animation: fadein 0.5s ease;
 	/*z-index: -1;*/
 }
 .project:hover ~ .veil
 {
 	opacity: .9;
+}
+
+::-webkit-scrollbar
+{
+	opacity: 0;
 }
 
 @keyframes fadein
@@ -253,7 +262,31 @@ nav:active ~ .overlay
 	100% { opacity: 1; }
 }
 
+@-webkit-keyframes fadein
+{
+	0% { opacity: 0; }
+	100% { opacity: 1; }
+}
+
+@-moz-keyframes fadein
+{
+	0% { opacity: 0; }
+	100% { opacity: 1; }
+}
+
 @keyframes fadeout
+{
+	0% { opacity: 1; }
+	100% { opacity: 0; }
+}
+
+@-webkit-keyframes fadeout
+{
+	0% { opacity: 1; }
+	100% { opacity: 0; }
+}
+
+@-moz-keyframes fadeout
 {
 	0% { opacity: 1; }
 	100% { opacity: 0; }
@@ -536,6 +569,8 @@ nav:active ~ .overlay
 		transform: rotateX(0deg) rotateZ(0deg);
 		margin-left: 70vw;
 		animation: fadein 0.5s ease;
+		-webkit-animation: fadein 0.5s ease;
+    	-moz-animation: fadein 0.5s ease;
 	}
 
 	.menu-button:checked ~ .heromobile
@@ -543,6 +578,8 @@ nav:active ~ .overlay
 		pointer-events: auto;
 		opacity: 1;
 		animation: fadein 0.5s ease;
+		-webkit-animation: fadein 0.5s ease;
+    	-moz-animation: fadein 0.5s ease;
 	}
 
 	.menu-button:checked 
