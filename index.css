@@ -274,6 +274,11 @@ nav:active ~ .overlay
 	background-image: linear-gradient(90deg, grey 30%, rgba(0,0,0,0) 20%, rgba(0,0,0,0) 50% )
 }
 
+::-webkit-scrollbar-thumb:hover
+{
+	background-image: linear-gradient(90deg, lightgrey 30%, rgba(0,0,0,0) 20%, rgba(0,0,0,0) 50% )
+}
+
 @keyframes fadein
 {
 	0% { opacity: 0; }
