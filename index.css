@@ -248,12 +248,19 @@ nav:active ~ .overlay
 }
 .project:hover ~ .veil
 {
+	
 	opacity: .9;
 }
 
 ::-webkit-scrollbar
 {
+	position: absolute;
 	opacity: 0;
+}
+
+::-webkit-scrollbar-thumb
+{
+	opacity: 1;
 }
 
 @keyframes fadein
