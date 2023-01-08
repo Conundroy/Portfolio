@@ -12,6 +12,11 @@
   /* Check Signika font on Google font */
 }
 
+html
+{
+	overflow-y: overlay;
+}
+
 nav
 {
 	justify-content: space-evenly;
@@ -255,7 +260,6 @@ nav:active ~ .overlay
 
 ::-webkit-scrollbar
 {
-	position: absolute;
 	opacity: 0;
 }
 
