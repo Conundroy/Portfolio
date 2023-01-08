@@ -28,21 +28,14 @@ body
 
 .project
 {
-	display: flex;
+	display: grid;
  	/* justify-content: flex-end; */
-  	align-items: flex-end;
 	/* padding-top: 80vh;
 	padding-bottom: 80vh; */
 	/* position: relative;  */
 	/* left: 0;
 	bottom: 0; */
 	/* text-align: bottom; */
-	width: 50vw;
-	height: 200vh;
-	font-family: bahnschrift;
-	color: whitesmoke;
-	overflow: clip;
-	z-index: -1;
 	/* border: 1px solid #4CAF50; */
 }
 
@@ -187,6 +180,35 @@ body
 	align-items: flex-end;
 }
 
+.descbox
+{
+	width: 40vw; 
+	height: 30vh; 
+	margin-top: 3vh; 
+}
+
+.title
+{
+	font-family: bahnschrift;
+	color: whitesmoke;
+	display: flex; 
+	justify-content: flex-end; 
+	flex-direction: row;
+	width: 50vw;
+	margin-top: 3vh;
+	text-align: right;
+}
+
+.gist
+{
+	font-family: bahnschrift;
+	color: whitesmoke;
+	display: flex; 
+	justify-content: flex-end; 
+	flex-direction: column; 
+	width: 40vw;
+}
+
 #banner
 {
 	position: absolute;
@@ -256,14 +278,13 @@ nav:active ~ .overlay
 
 	.project
 	{
-		font-size: 5vh;
-		margin-left: 5vh;
+		rotate: 10.25deg;
+		margin-top: 15vh;
 	}
 
 	.desc
 	{
-		width: 60vw;
-		font-size: 3vh;
+		font-size: 3vw;
 		margin-left: 2.5vh;
 	}
 
@@ -318,14 +339,30 @@ nav:active ~ .overlay
 		visibility: hidden;
 	}
 
+	.title
+	{
+		font-size: 10vw;
+	}
+
+	.gist
+	{
+		font-size: 7vw;
+	}
+
 	#banner
 	{
 		height: 50vh;
 	}
 
+	#mygreet
+	{
+		font-size: 10vh;
+	}
+
 	#myname
 	{
 		top: 30vh;
+		font-size: 10vh;
 	}
 	
 	#mynamebox
@@ -537,14 +574,13 @@ nav:active ~ .overlay
 
 	.project
 	{
-		font-size: 5vw;
-		margin-left: 5vw;
+		rotate: 7deg;
+		margin-top: 15vw;
 	}
 
 	.desc
 	{
-		width: 50vw;
-		font-size: 2vw;
+		font-size: 3vh;
 		margin-left: 2.5vw;
 	}
 
@@ -600,9 +636,14 @@ nav:active ~ .overlay
 		position: absolute;
 	}
 
-	.descbox
+	.title
 	{
-		height: 170vh;
+		font-size: 10vh;
+	}
+
+	.gist
+	{
+		font-size: 7vh;
 	}
 
 	#banner
@@ -610,9 +651,15 @@ nav:active ~ .overlay
 		height: 50vw;
 	}
 
+	#mygreet
+	{
+		font-size: 10vw;
+	}
+
 	#myname
 	{
 		top: 40vh;
+		font-size: 10vw;
 	}
 	
 	#mynamebox
