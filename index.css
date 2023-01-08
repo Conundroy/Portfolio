@@ -271,7 +271,7 @@ nav:active ~ .overlay
 
 ::-webkit-scrollbar-thumb
 {
-	background: whitesmoke;
+	background: lightslategray;
 	border-radius: 10px;
 }
 
