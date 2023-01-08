@@ -262,6 +262,8 @@ nav:active ~ .overlay
 ::-webkit-scrollbar-thumb
 {
 	opacity: 1;
+	color: whitesmoke;
+	border-radius: 10px;
 }
 
 @keyframes fadein
