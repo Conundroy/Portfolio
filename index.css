@@ -258,7 +258,7 @@ nav:active ~ .overlay
 	opacity: .9;
 }
 
-::-webkit-scrollbar
+::-webkit-scrollbar-track
 {
 	opacity: 0;
 }
