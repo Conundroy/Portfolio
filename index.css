@@ -225,6 +225,7 @@ body
 #logo
 {
 	display: flex;
+	display: -webkit-flexbox;
 	justify-content: flex-end;
 	/*border: 1px solid #4CAF50;*/
 }
@@ -304,6 +305,7 @@ nav:active ~ .overlay
 	nav
 	{
 		display: flex;
+		display: -webkit-flexbox;
 		font-size: 10vh;
 		margin-top: -5vh;
 		transform: rotateX(45deg) rotateZ(15deg);
@@ -364,6 +366,7 @@ nav:active ~ .overlay
 	.navbar
 	{
 		display: flex; 
+		display: -webkit-flexbox;
 		flex-direction: column;
 		margin-right: 5vw;
 		/* margin-bottom: 4vh; */
@@ -509,6 +512,7 @@ nav:active ~ .overlay
 	{
 		position: absolute;
 		display: flex;
+		display: -webkit-flexbox;
 		flex-direction: column;
 		top: 0;
 		transform: translateX(-50%);
@@ -603,6 +607,7 @@ nav:active ~ .overlay
 	nav
 	{
 		display: flex;
+		display: -webkit-flexbox;
 		font-size: 3.5vw;
 		margin-top: -5vw;
 		transform: rotateX(45deg) rotateZ(10deg);
@@ -666,6 +671,7 @@ nav:active ~ .overlay
 	.navbar
 	{
 		display: flex; 
+		display: -webkit-flexbox;
 		justify-content: space-between;
 		text-align: center;
 		transform-style: preserve-3d;
