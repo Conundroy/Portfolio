@@ -149,6 +149,7 @@ body
 {
 	font-family: bahnschrift;
 	color: whitesmoke;
+	font-size: clamp(5rem, 10vw + 5rem, 10rem)
 }
 
 .gradient
@@ -390,7 +391,7 @@ nav:active ~ .overlay
 
 	.conundroy
 	{
-		font-size: 10vh;
+		
 		margin-top: 22vh;
 		transform: rotateX(45deg) rotateZ(15deg);
 	}
@@ -695,7 +696,7 @@ nav:active ~ .overlay
 
 	.conundroy
 	{
-		font-size: 12.5vw;
+		
 		margin-top: 22vw;
 		transform: rotateX(45deg) rotateZ(10deg);
 	}
