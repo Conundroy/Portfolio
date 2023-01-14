@@ -21,6 +21,7 @@ nav
 {
 	justify-content: space-evenly;
 	text-align: center;
+	-webkit-transform-style: preserve-3d;
 	transform-style: preserve-3d;
 	width: 100%;
 	/* border: 1px solid #4CAF50; */
@@ -102,6 +103,7 @@ body
 	height: 100vh;
 	opacity: .7;
 	/* pointer-events: none; */
+	-webkit-transition: opacity 0.5s ease;
   	transition: opacity 0.5s ease;
 	z-index: -2;
 }
@@ -240,7 +242,9 @@ body
 	background-color: brown;
 	left: -100%;
 	width: 300%;
+	-webkit-transform-origin: bottom center;
 	transform-origin: bottom center;
+	-webkit-transform: translate(0, -85%);
 	transform: translate(0, -85%);
 	z-index: -1;
 }
@@ -256,6 +260,7 @@ body
 a
 {
 	color:black; 
+	-webkit-transition: .2s; 
 	transition: .2s; 
 	text-decoration: none; 
 	font-family: bahnschrift;
@@ -341,6 +346,7 @@ nav:active ~ .overlay
 		display: -webkit-flexbox;
 		font-size: 10vh;
 		margin-top: -5vh;
+		-webkit-transform: rotateX(45deg) rotateZ(15deg);
 		transform: rotateX(45deg) rotateZ(15deg);
 	}
 
@@ -393,6 +399,7 @@ nav:active ~ .overlay
 	{
 		
 		margin-top: 22vh;
+		-webkit-transform: rotateX(45deg) rotateZ(15deg);
 		transform: rotateX(45deg) rotateZ(15deg);
 	}
 
@@ -531,6 +538,7 @@ nav:active ~ .overlay
 	.hamburger-line .third
 	{
 		margin-left: 50%;
+		-webkit-transform-origin: left;
 		transform-origin: left;
 	}
 
@@ -548,8 +556,11 @@ nav:active ~ .overlay
 		display: -webkit-flexbox;
 		flex-direction: column;
 		top: 0;
+		-webkit-transform: translateX(-50%);
 		transform: translateX(-50%);
+		-webkit-transform-origin: center;
 		transform-origin: center;
+		-webkit-transition: opacity 0.5s ease;
 		transition: opacity 0.5s ease;
 		background-color: brown;
 		width: 100vw;
@@ -583,7 +594,8 @@ nav:active ~ .overlay
 
 	.menu-button:checked ~ .item-list
 	{
-		transform: translateX(-50%);
+		-webkit-transform-origin: center;
+		transform-origin: center;
 		opacity: 1;
 		pointer-events: auto;
 		z-index: -1;
@@ -591,11 +603,13 @@ nav:active ~ .overlay
   
 	.menu-button:checked ~ .icon-wrapper .hamburger-line.second
 	{
+		-webkit-transform: rotate(-45deg);
 		transform: rotate(-45deg);
 	}
 
 	.menu-button:checked ~ .icon-wrapper .hamburger-line.first
 	{
+		-webkit-transform: translate(0vw, 4vw) rotate(-135deg);
 		transform: translate(0vw, 4vw) rotate(-135deg);
 	}
 
@@ -605,11 +619,13 @@ nav:active ~ .overlay
 	}
   
 	.menu-button:checked ~ .icon-wrapper .hamburger:before {
+		-webkit-transform: rotate(45deg);
 		transform: rotate(45deg);
 	}
 
 	.menu-button:checked ~ .icon-wrapper
 	{
+		-webkit-transform: rotateX(0deg) rotateZ(0deg);
 		transform: rotateX(0deg) rotateZ(0deg);
 		margin-left: 70vw;
 		animation: fadein 0.5s ease;
@@ -629,6 +645,7 @@ nav:active ~ .overlay
 	.menu-button:checked 
 	{
 		margin-left: 70vw;
+		-webkit-transform: rotateX(0deg) rotateZ(0deg);
 		transform: rotateX(0deg) rotateZ(0deg);
 	}
 
@@ -643,6 +660,7 @@ nav:active ~ .overlay
 		display: -webkit-flexbox;
 		font-size: 3.5vw;
 		margin-top: -5vw;
+		-webkit-transform: rotateX(45deg) rotateZ(10deg);
 		transform: rotateX(45deg) rotateZ(10deg);
 	}
 
@@ -707,6 +725,7 @@ nav:active ~ .overlay
 		display: -webkit-flexbox;
 		justify-content: space-between;
 		text-align: center;
+		-webkit-transform-style: preserve-3d;
 		transform-style: preserve-3d;
 		margin-top: 2vw;
 		width: 40%;
