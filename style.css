@@ -3,7 +3,7 @@ body {
 	color: white;
 	margin: 0;
 	font-family: bahnschrift;
-	overflow: hidden;
+	overflow: clip;
 }
 
 @font-face 
