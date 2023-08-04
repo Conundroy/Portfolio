@@ -31,7 +31,8 @@ a:visited{color: darkgray;}
 	.menu {
 		border-radius: 1vw 1vw 1vw 1vw;
 		border-width: .25vw .5vw .5vw .25vw;
-		box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19)
+		box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+		background-color: #212121;
 	}
 	.index {
 		padding: 0.5vw;
@@ -64,9 +65,10 @@ a:visited{color: darkgray;}
 		width: 19vw;
 	}
 	.menu {
-		border-radius: 1vh 1vh 1vh 1vh;
-		border-width: .25vh .5vh .5vh .25vh;
-		box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19)
+		border-radius: 0;
+		border-width: 0;
+		background-color: rgba(0, 0, 0, 0);
+/*		box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);*/
 	}
 	.index {
 		padding: 0.5vh;
@@ -99,7 +101,6 @@ a:visited{color: darkgray;}
 	display: flex;
 	flex-direction: column;
 /*	background-color: #151a24;*/
-	background-color: #212121;
 	
 	border-style: solid;
 	border-color: #2b2b2b;
@@ -135,6 +136,7 @@ a:visited{color: darkgray;}
 }
 .button {
 	margin: auto;
+	text-shadow: .75vw .75vw 1vw black, 0 0 2vw grey;
 }
 
 button {
