@@ -33,6 +33,7 @@ a:visited{color: darkgray;}
 		border-width: .25vw .5vw .5vw .25vw;
 		box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
 		background-color: #212121;
+		height: 50%;
 	}
 	.index {
 		padding: 0.5vw;
@@ -68,7 +69,7 @@ a:visited{color: darkgray;}
 		border-radius: 0;
 		border-width: 0;
 		background-color: rgba(0, 0, 0, 0);
-/*		box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);*/
+		height: 30%;
 	}
 	.index {
 		padding: 0.5vh;
@@ -86,6 +87,7 @@ a:visited{color: darkgray;}
 		padding-right: 5vh;
 		font-size: 3vh;
 	}
+	.button {height: 25%}
 }
 
 .side-panel {
@@ -97,7 +99,6 @@ a:visited{color: darkgray;}
 	margin-left: auto;
 	margin-right: auto;
 	width: 75%;
-	height: 50%;
 	display: flex;
 	flex-direction: column;
 /*	background-color: #151a24;*/
