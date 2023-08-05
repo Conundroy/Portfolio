@@ -29,10 +29,12 @@ a:visited{color: darkgray;}
 		width: 19vw;
 	}
 	.menu {
-		border-radius: 1vw 1vw 1vw 1vw;
-		border-width: .25vw .5vw .5vw .25vw;
-		box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
-		background-color: #212121;
+/*		border-radius: 1vw 1vw 1vw 1vw;
+		border-width: .25vw .5vw .5vw .25vw;*/
+/*
+		box-shadow: 0 12px 16px 0 #2b2b2b, 0 17px 50px 0 rgba(0,0,0,0.19);
+*/
+		background-color: rgba(0,0,0,0);
 		height: 50%;
 	}
 	.index {
@@ -45,12 +47,13 @@ a:visited{color: darkgray;}
 		border-radius: 0 5vw 0 0;
 	}
 	.main {
-/*		border-radius: 5vw 5vw 5vw 5vw;*/
 		width: 65%;
 		padding-left: 5vw;
 		padding-right: 5vw;
 		font-size: 3vw;
 	}
+	.border-index {border-radius: 5vw 5vw 5vw 5vw;}
+	.border-about {border-radius: 0 5vw 0 0;}
 }
 
 @media screen and (orientation: portrait)
@@ -81,12 +84,13 @@ a:visited{color: darkgray;}
 		border-radius: 0 5vh 0 0;
 	}
 	.main {
-/*		border-radius: 5vh 5vh 5vh 5vh;*/
 		width: 75%;
 		padding-left: 5vh;
 		padding-right: 5vh;
 		font-size: 3vh;
 	}
+	.border-index {border-radius: 5vw 5vh 5vh 5vh;}
+	.border-about {border-radius: 0 5vh 0 0;}
 	.button {height: 25%}
 }
 
@@ -101,10 +105,9 @@ a:visited{color: darkgray;}
 	width: 75%;
 	display: flex;
 	flex-direction: column;
-/*	background-color: #151a24;*/
-	
+/*	background-color: #151a24;
 	border-style: solid;
-	border-color: #2b2b2b;
+	border-color: #2b2b2b; */
 }
 
 .index {
@@ -116,10 +119,10 @@ a:visited{color: darkgray;}
 	z-index: -1;
 	background-color: #212121;
 }
-.landing {
+.anchor-top {
 	top: 0;
 }
-.about {
+.anchor-bottom {
 	bottom: 0;
 }
 .main {
@@ -131,13 +134,14 @@ a:visited{color: darkgray;}
 	height: 100%;
 	word-wrap: break-word;
 	overflow: auto;
+	box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
 }
 .main-padding {
 	height: 10%;
 }
 .button {
 	margin: auto;
-	text-shadow: .5vw .5vw 1vw black, 0 0 1vw grey;
+/*	text-shadow: .5vw .5vw 1vw black, 0 0 1vw grey; */
 }
 
 button {
