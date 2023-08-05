@@ -13,6 +13,10 @@ body {
   /* Check Signika font on Google font */
 }
 
+img {
+	width: 100%;
+}
+
 a {text-decoration: none;}
 a:active {color:#151a24;}
 a:hover {color:whitesmoke;} 
@@ -47,9 +51,9 @@ a:visited{color: darkgray;}
 		border-radius: 0 5vw 0 0;
 	}
 	.main {
-		width: 65%;
-		padding-left: 5vw;
-		padding-right: 5vw;
+		width: 78%;
+/*		padding-left: 5vw;
+		padding-right: 5vw;*/
 		font-size: 3vw;
 	}
 	.border-index {border-radius: 5vw 5vw 5vw 5vw;}
@@ -72,7 +76,6 @@ a:visited{color: darkgray;}
 		border-radius: 0;
 		border-width: 0;
 		background-color: rgba(0, 0, 0, 0);
-
 	}
 	.index {
 		padding: 0.5vh;
@@ -84,9 +87,9 @@ a:visited{color: darkgray;}
 		border-radius: 0 5vh 0 0;
 	}
 	.main {
-		width: 75%;
-		padding-left: 5vh;
-		padding-right: 5vh;
+		width: 100%;
+/*		padding-left: 5vh;
+		padding-right: 5vh;*/
 		font-size: 3vh;
 	}
 	.border-index {border-radius: 5vw 5vh 5vh 5vh;}
@@ -139,7 +142,7 @@ a:visited{color: darkgray;}
 	box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
 }
 .main-padding {
-	height: 10%;
+	padding: 5%;
 }
 .button {
 	margin-top: auto;
