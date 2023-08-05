@@ -63,7 +63,7 @@ a:visited{color: darkgray;}
 @media screen and (orientation: portrait)
 {
 	a {
-		font-size: 1.85vh;
+		font-size: 4.25vw;
 	}
 
 	.side-panel {
