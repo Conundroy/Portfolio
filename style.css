@@ -28,7 +28,7 @@ a:visited{color: darkgray;}
 @media screen and (orientation: landscape)
 {
 	a {
-		font-size: 3vh;
+		font-size: 3vw;
 	}
 	.side-panel {
 		height: 90vh;
@@ -36,10 +36,8 @@ a:visited{color: darkgray;}
 	}
 	.menu {
 /*		border-radius: 1vw 1vw 1vw 1vw;
-		border-width: .25vw .5vw .5vw .25vw;*/
-/*
-		box-shadow: 0 12px 16px 0 #2b2b2b, 0 17px 50px 0 rgba(0,0,0,0.19);
-*/
+		border-width: .25vw .5vw .5vw .25vw;
+		box-shadow: 0 12px 16px 0 #2b2b2b, 0 17px 50px 0 rgba(0,0,0,0.19);*/
 		background-color: rgba(0,0,0,0);
 		
 	}
@@ -65,7 +63,7 @@ a:visited{color: darkgray;}
 @media screen and (orientation: portrait)
 {
 	a {
-		font-size: 3vw;
+		font-size: 1.85vh;
 	}
 
 	.side-panel {
@@ -107,14 +105,13 @@ a:visited{color: darkgray;}
 	margin-top: 20%;
 	margin-left: auto;
 	margin-right: auto;
-	width: 50%;
+	width: 75%;
 	display: flex;
+	height: 30%;
 	flex-direction: column;
-
 /*	background-color: #151a24;
 	border-style: solid;
 	border-color: #2b2b2b; */
-	height: 20%;
 }
 
 .index {
