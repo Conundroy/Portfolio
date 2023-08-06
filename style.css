@@ -2,15 +2,21 @@ body {
 	background-color: #181818;
 	color: white;
 	margin: 0;
-	font-family: bahnschrift;
+	font-family: spacegrotesk;
 	overflow: clip;
 }
 
 @font-face 
 {
-	font-family: bahnschrift;
-	src: url(font/bahnschrift.ttf);
+	font-family: spacegrotesk;
+	src: url(font/SpaceGroteskRegular.ttf);
   /* Check Signika font on Google font */
+}
+@font-face 
+{
+	font-family: spacegrotesk;
+	src: url(font/SpaceGroteskMedium.ttf);
+	font-weight: bold;
 }
 
 img {
@@ -61,6 +67,8 @@ a:visited{color: darkgray;}
 	.border-about {border-radius: 0 5vw 0 0;}
 	.desktop {visibility: visible}
 	.mobile {visibility: hidden; position: absolute;}
+	.title {font-size: 3vw}
+	.name {font-size: 5vw}
 }
 
 @media screen and (orientation: portrait)
@@ -101,6 +109,8 @@ a:visited{color: darkgray;}
 	.border-about {border-radius: 0 5vh 0 0;}
 	.desktop {visibility: hidden; position: absolute;}
 	.mobile {visibility: visible}
+	.title {font-size: 3.5vh}
+	.name {font-size: 5.5vh}
 }
 
 .side-panel {
