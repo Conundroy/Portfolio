@@ -69,6 +69,7 @@ a:hover {color:whitesmoke;}
 	.mobile {visibility: hidden; position: absolute;}
 	.title {font-size: 3vw}
 	.name {font-size: 5vw}
+	.credit {font-size: 2vw}
 }
 
 @media screen and (orientation: portrait)
@@ -111,6 +112,7 @@ a:hover {color:whitesmoke;}
 	.mobile {visibility: visible}
 	.title {font-size: 3.5vh}
 	.name {font-size: 5.5vh}
+	.credit {font-size: 2vh}
 }
 
 .side-panel {
