@@ -25,7 +25,7 @@ img {
 	box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19)
 }
 
-a {text-decoration: none; color: grey;}
+a {text-decoration: none; color: grey}
 /*a:active {color:#151a24;}*/
 a:hover {color:whitesmoke;} 
 /*a:focus{color:#151a24;}*/
@@ -164,6 +164,7 @@ a:hover {color:whitesmoke;}
 .button {
 	margin-top: auto;
 	margin-bottom: auto;
+	transition: .2s ease-in;
 /*	text-shadow: .5vw .5vw 1vw black, 0 0 1vw grey; */
 }
 
