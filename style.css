@@ -3,7 +3,7 @@ body {
 	color: white;
 	margin: 0;
 	font-family: spacegrotesk;
-	overflow: clip;
+	overflow: hidden;
 }
 
 @font-face 
@@ -63,8 +63,8 @@ a:hover {color:whitesmoke;}
 		padding-right: 5vw;*/
 		font-size: 3vw;
 	}
-	.border-index {border-radius: 5vw 5vw 5vw 5vw;}
-	.border-about {border-radius: 0 5vw 0 0;}
+	.border-index {border-radius: 5vw 5vw 5vw 5vw;clip-path: inset(0 0 0 0 round 5vw 5vw 5vw 5vw);}
+	.border-about {border-radius: 0 5vw 0 0;clip-path: inset(0 0 0 0 round 0 5vw 0 0);}
 	.desktop {visibility: visible}
 	.mobile {visibility: hidden; position: absolute;}
 	.title {font-size: 3vw}
@@ -105,8 +105,8 @@ a:hover {color:whitesmoke;}
 		padding-right: 5vh;*/
 		font-size: 3vh;
 	}
-	.border-index {border-radius: 5vw 5vh 5vh 5vh;}
-	.border-about {border-radius: 0 5vh 0 0;}
+	.border-index {border-radius: 5vh 5vh 5vh 5vh;clip-path: inset(0 0 0 0 round 5vh 5vh 5vh 5vh);}
+	.border-about {border-radius: 0 5vh 0 0;clip-path: inset(0 0 0 0 round 0 5vh 0 0);}
 	.desktop {visibility: hidden; position: absolute;}
 	.mobile {visibility: visible}
 	.title {font-size: 3.5vh}
