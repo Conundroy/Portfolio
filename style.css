@@ -38,7 +38,7 @@ a:hover {color:whitesmoke;}
 	}
 	.side-panel {
 		height: 90vh;
-		width: 19vw;
+/*		width: 19vw;*/
 	}
 	.menu {
 /*		border-radius: 1vw 1vw 1vw 1vw;
@@ -81,7 +81,7 @@ a:hover {color:whitesmoke;}
 		top: 0;
 		right: 0;
 		height: 90vw;
-		width: 19vw;
+/*		width: 19vw;*/
 	}
 	.menu {
 		border-radius: 0;
@@ -115,6 +115,7 @@ a:hover {color:whitesmoke;}
 
 .side-panel {
 	position: absolute;
+	width: 17.8%;
 /*	background-color: white;*/
 }
 .menu {
@@ -170,6 +171,13 @@ a:hover {color:whitesmoke;}
 .main-padding {
 	padding: 5%;
 }
+
+.scrollbar {scrollbar-width: thin;direction: rtl;scrollbar-color: grey rgba(0, 0, 0, .24);}
+.scrollbar-offset {direction: ltr;}
+.scrollbar::-webkit-scrollbar {width:.5rem; background: rgba(0, 0, 0, .24)}
+.scrollbar::-webkit-scrollbar-thumb {background: grey;}
+::-webkit-scrollbar {width: 0}
+
 .button {
 	margin-top: auto;
 	margin-bottom: auto;
@@ -206,7 +214,6 @@ a:hover {color:whitesmoke;}
 }
 
 .credit {font-size: 1rem}
-::-webkit-scrollbar {width:0}
 
 button {
 	color: white;
