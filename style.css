@@ -220,7 +220,7 @@ a:hover {color:whitesmoke;}
 	40% {transform: translateY(-30px);}
 	60% {transform: translateY(-15px);}
 }
-.prompt {padding: 5%; bottom:0; position:absolute; text-align:center;color:grey;}
+.prompt {padding: 2%; bottom:0; position:absolute;color:grey;}
 .bounce {animation: bounce 2s infinite 1s;}
 
 button {
