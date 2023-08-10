@@ -5,7 +5,7 @@ body {
 	font-family: spacegrotesk;
 	overflow: hidden;
 }
-div {overflow-x: hidden}
+/*div {overflow-x: hidden}*/
 
 @font-face 
 {
@@ -118,6 +118,7 @@ a:hover {color:whitesmoke;}
 	position: absolute;
 	width: 17.8%;
 /*	background-color: white;*/
+	overflow-x: hidden
 }
 .menu {
 	margin-top: 20%;
