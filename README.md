@@ -1,0 +1,1 @@
+This my online portfolio where I'd showcase games or apps I made or I'm really proud of. Apart from any embedded iframes, the site is entirely JavaScript free and made extensive use of CSS for the most possible nice looking effects.
