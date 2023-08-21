@@ -5,9 +5,8 @@ body {
 	font-family: spacegrotesk;
 	overflow: hidden;
 }
-/*div {overflow-x: hidden}*/
 
-@font-face 
+@font-face
 {
 	font-family: spacegrotesk;
 	src: url(font/SpaceGroteskRegular.ttf);
@@ -34,38 +33,21 @@ a:hover {color:whitesmoke;}
 
 @media screen and (orientation: landscape)
 {
-	a {
-		font-size: 3vw;
-	}
-	.side-panel {
-		height: 90vh;
-/*		width: 19vw;*/
-	}
+	a {font-size: 3vw;}
 	.menu {
 /*		border-radius: 1vw 1vw 1vw 1vw;
 		border-width: .25vw .5vw .5vw .25vw;
 		box-shadow: 0 12px 16px 0 #2b2b2b, 0 17px 50px 0 rgba(0,0,0,0.19);*/
-		background-color: rgba(0,0,0,0);
-		height: 30%;
-		width: 75%;
+		height: 30%;width: 75%;
 	}
-	.index {
-		padding: 0.5vw;
-	}
-	.border-r-top {
-		border-radius: 0 5vw 5vw 0;
-	}
-	.border-r-bottom {
-		border-radius: 0 5vw 0 0;
-	}
+	.index {padding: 0.5vw;}
+	.border-r-top {border-radius: 0 5vw 5vw 0;}
+	.border-r-bottom {border-radius: 0 5vw 0 0;}
 	.main {
 		width: 78%;
-/*		padding-left: 5vw;
-		padding-right: 5vw;*/
+/*		padding-left: 5vw;padding-right: 5vw;*/
 		font-size: 3vw;
 	}
-	.border-index {border-radius: 5vw 5vw 5vw 5vw}
-	.border-about {border-radius: 0 5vw 0 0}
 	.desktop {visibility: visible}
 	.mobile {visibility: hidden; position: absolute;}
 	.title {font-size: 3vw}
@@ -74,40 +56,21 @@ a:hover {color:whitesmoke;}
 
 @media screen and (orientation: portrait)
 {
-	a {
-		font-size: 4.25vw;
-	}
-
-	.side-panel {
-		top: 0;
-		right: 0;
-		height: 90vw;
-/*		width: 19vw;*/
-	}
+	a {font-size: 4.25vw;}
+	.side-panel {top: 0;right: 0;}
 	.menu {
-		border-radius: 0;
-		border-width: 0;
-		background-color: rgba(0, 0, 0, 0);
-		height: 15rem;
-		width: 70%;
+		border-radius: 0;border-width: 0;
+		height: 15rem;width: 70%;
 	}
-	.index {
-		padding: 0.5vh;
-	}
-	.border-r-top {
-		border-radius: 0 5vh 5vh 0;
-	}
-	.border-r-bottom {
-		border-radius: 0 5vh 0 0;
-	}
+	.index {padding: 0.5vh;}
+	.border-r-top {border-radius: 0 5vh 5vh 0;}
+	.border-r-bottom {border-radius: 0 5vh 0 0;}
 	.main {
 		width: 100%;
 /*		padding-left: 5vh;
 		padding-right: 5vh;*/
 		font-size: 3vh;
 	}
-	.border-index {border-radius: 5vh 5vh 5vh 5vh;}
-	.border-about {border-radius: 0 5vh 0 0;}
 	.desktop {visibility: hidden; position: absolute;}
 	.mobile {visibility: visible}
 	.title {font-size: 3.5vh}
@@ -116,16 +79,14 @@ a:hover {color:whitesmoke;}
 
 .side-panel {
 	position: absolute;
-	width: 17.8%;
+	width: 17.8%;height:90vmin;
 /*	background-color: white;*/
 	overflow-x: hidden
 }
 .menu {
-	margin-top: 20%;
-	margin-left: auto;
-	margin-right: auto;
-	display: flex;
-	flex-direction: column;
+	margin-top: 20%;margin-left: auto;margin-right: auto;
+	display: flex;flex-direction: column;
+	background-color: rgba(0,0,0,0);
 /*	background-color: #151a24;
 	border-style: solid;
 	border-color: #2b2b2b; */
@@ -133,19 +94,16 @@ a:hover {color:whitesmoke;}
 
 .index {
 	position: fixed;
-	height: 90vh;
-	width: 80vw;
+	height: 90vh;width: 80vw;
 /*	right: 0;*/
 /*	left: 10%;*/
 	z-index: -1;
 	background-color: #212121;
 }
-.anchor-top {
-	top: 0;
-}
-.anchor-bottom {
-	bottom: 0;
-}
+.border-index {border-radius: 5vmin 5vmin 5vmin 5vmin;}
+.border-about {border-radius: 0 5vmin 0 0;}
+.anchor-top {top: 0;}
+.anchor-bottom {bottom: 0;}
 .main {
 	position: absolute;
 /*	background-color: #151a24;*/
@@ -170,9 +128,7 @@ a:hover {color:whitesmoke;}
 	display:flex;flex-direction: column;justify-content: space-between;
 	scrollbar-width: none;
 }
-.main-padding {
-	padding: 5%;
-}
+.main-padding {padding: 5%;}
 
 .scrollbar {scrollbar-width: thin;direction: rtl;scrollbar-color: grey rgba(0, 0, 0, .24);}
 .scrollbar-offset {direction: ltr;}
@@ -181,8 +137,7 @@ a:hover {color:whitesmoke;}
 ::-webkit-scrollbar {width: 0}
 
 .button {
-	margin-top: auto;
-	margin-bottom: auto;
+	margin-top: auto;margin-bottom: auto;
 	transition: .2s ease-in;
 /*	text-shadow: .5vw .5vw 1vw black, 0 0 1vw grey; */
 }
