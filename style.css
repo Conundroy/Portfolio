@@ -178,8 +178,8 @@ a:hover {color:whitesmoke;}
 .prompt {padding: 2%; bottom:0; position:absolute;color:grey;}
 .bounce {animation: bounce 2s infinite 1s;}
 
-.category {font-size:4vmin; color:lightgrey}
-.roles {padding-left:5vmin;font-size:3vmin;}
+.category {font-size:3vmax; color:lightgrey}
+.roles {padding-left:3vmax;font-size:2vmax;}
 
 button {
 	color: white;
