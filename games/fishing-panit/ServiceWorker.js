@@ -1,9 +1,9 @@
 const cacheName = "Tete Studio-Fishing Panit-1.0";
 const contentToCache = [
-    "Build/html.loader.js",
-    "Build/html.framework.js",
-    "Build/html.data",
-    "Build/html.wasm",
+    "Build/fishing-panit.loader.js",
+    "Build/fishing-panit.framework.js",
+    "Build/fishing-panit.data",
+    "Build/fishing-panit.wasm",
     "TemplateData/style.css"
 
 ];
