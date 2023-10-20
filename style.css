@@ -41,8 +41,8 @@ a:hover {color:whitesmoke;}
 		height: 30%;width: 75%;
 	}
 	.index {padding: 0.5vw;}
-	.border-r-top {border-radius: 0 5vw 5vw 0;}
-	.border-r-bottom {border-radius: 0 5vw 0 0;}
+/*	.border-r-top {border-radius: 0 5vmin 5vmin 0;}
+	.border-r-bottom {border-radius: 0 5vmin 0 0;}*/
 	.main {
 		width: 78%;
 /*		padding-left: 5vw;padding-right: 5vw;*/
@@ -63,8 +63,8 @@ a:hover {color:whitesmoke;}
 		height: 15rem;width: 70%;
 	}
 	.index {padding: 0.5vh;}
-	.border-r-top {border-radius: 0 5vh 5vh 0;}
-	.border-r-bottom {border-radius: 0 5vh 0 0;}
+/*	.border-r-top {border-radius: 0 5vh 5vh 0;}
+	.border-r-bottom {border-radius: 0 5vh 0 0;}*/
 	.main {
 		width: 100%;
 /*		padding-left: 5vh;
@@ -98,6 +98,8 @@ a:hover {color:whitesmoke;}
 	z-index: -1;
 	background-color: #212121;
 }
+.border-r-top {border-radius: 0 5vmin 5vmin 0;}
+.border-r-bottom {border-radius: 0 5vmin 0 0;}
 .border-index {border-radius: 5vmin 5vmin 5vmin 5vmin;}
 .border-about {border-radius: 0 5vmin 0 0;}
 .anchor-top {top: 0;}
